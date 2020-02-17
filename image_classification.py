@@ -40,6 +40,10 @@ def pta(n, eta, epsilon):
         if errors[epoch-1] / n <= epsilon:
             break
         elif epoch >= 50:
+            plt.plot(range(epoch), errors)
+            plt.xlabel("Number of epochs")
+            plt.ylabel("Number of misclassifications")
+            plt.show()
             return -1
         
     plt.plot(range(epoch), errors)
@@ -65,7 +69,7 @@ if __name__ == "__main__":
     train_y = read_idx('train-labels.idx1-ubyte')
     test_X = read_idx('t10k-images.idx3-ubyte')
     test_y = read_idx('t10k-labels.idx1-ubyte')
-    W = pta(30000, 0.5, 0.15)
+    W = pta(30000, 1, 0.15)
     test_classification(W, 30000)
     W = pta(50, 1, 0)
     test_classification(W, 50)
@@ -76,3 +80,9 @@ if __name__ == "__main__":
         test_classification(W, 60000)
     else:
         print("DIDN'T CONVERGE")
+    W = pta(60000, 1, 0.15)
+    test_classification(W, 60000)
+    W = pta(60000, 1, 0.15)
+    test_classification(W, 60000)
+    W = pta(60000, 1, 0.15)
+    test_classification(W, 60000)
