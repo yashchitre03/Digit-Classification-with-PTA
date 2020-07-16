@@ -13,29 +13,13 @@
 2. Matplotlib is used in order to plot the results.
 
    
-
 ### The following plots show the results when the algorithm is run on a part of the dataset.
 
+## For 50 images
 <img src="https://github.com/yashchitre03/Digit-Classification-with-PTA/blob/master/fig1.png">
 
-## For 50 images
-
-
-
-----------------------------------------------------------------
-
-
-
+## For 1000 images
 <img src="https://github.com/yashchitre03/Digit-Classification-with-PTA/blob/master/fig2.png">
 
-## For 1000 images
-
-
-
----------------------------------
-
-
-
-<img src="https://github.com/yashchitre03/Digit-Classification-with-PTA/blob/master/fig3.png">
-
 ## For 60,000 images
+<img src="https://github.com/yashchitre03/Digit-Classification-with-PTA/blob/master/fig3.png">
